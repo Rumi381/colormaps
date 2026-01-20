@@ -3,14 +3,20 @@
 Utilities and resources for working with a curated set of scientific colormaps.
 The repository packages the original `.xpm` palette definitions together with
 Python helpers so you can load, sample, and register the colormaps in any
-Matplotlib workflow.
+Matplotlib workflow. The current available color maps are:
+<p align="center">
+  <a>
+    <img src="Plots/custom_colormaps_gallery.png">
+  </a>
+</p>
 
 ## Contents
 
-- `colormaps/` – raw XPM files sourced from [https://bids.github.io/colormap/](https://bids.github.io/colormap/)
+- `colormaps/` – raw XPM files sourced from [https://bids.github.io/colormap/](https://bids.github.io/colormap/) and other custom colormaps.
 - `colormap_utils.py` – parses the palettes, exposes helper APIs, and can register them with Matplotlib
 - `colormap_gallery.py` – generates a labeled gallery figure (`Plots/custom_colormaps_gallery.png`)
 - `ColormapUsage.ipynb` – notebook showing typical usage patterns
+- `samplePlottingHelper.py` – contains several helpers including setting figure size according to journal requirements, comprehensive rcParams setup of matplotlib, different color palettes and marker styles for generating high-quality journal figures
 - `Plots/` – generated figures (gallery or other outputs)
 
 ## Requirements
